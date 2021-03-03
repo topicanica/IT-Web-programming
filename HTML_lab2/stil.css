@@ -1,0 +1,9 @@
+body{
+	
+	background-image:url('bg.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.smjer_programiranje{
+	color: RGB(0, 0 ,255);
+} 

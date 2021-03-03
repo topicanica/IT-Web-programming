@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Anica Topic">
+    <meta charset="utf-8" />
+    <title>Vjezba 4</title>
+</head>
+<body>
+    <form name="register form">
+        <datalist id="drzava">
+            <option label="Hrvataka">Hrvatska</option>
+            <option label="Slovenija">Slovenija</option>
+            <option label="BiH">Bosna i Hercegovina</option>
+            <option label="Srbija">Srbija</option>
+        </datalist>
+        <fieldset>
+            <legend>Registracija novog korisnika</legend>
+            <fieldset>
+                <legend>Korisnicki podatci</legend>
+                Korisnicko ime <input type="text" name="username" placeholder="Unesite korisnicko ime:" required>
+                <br> Email <input type="email" name="email" placeholder="Unesite Email:" required>
+                <br> Lozinka <input type="password" name="password" placeholder="Unesite lozinku:" required>
+                <br> Lozinka <input type="password" name=" password" placeholder="Ponovo unesite lozinku:" required>
+            </fieldset>
+            <fieldset>
+                <legend>Registracija novog korisnika</legend>
+                Ime <input type="text" name="first_name" placeholder="Unesite svoje ime:" required>
+                <br> Prezime <input type="text" name="last_name" placeholder="Unesite svoje prezime:" required>
+                <br> Adresa <textarea type="text" name="adress" rows="10" cols="40" placeholder="Unesite svoju adresu:" required></textarea>
+                <br> Grad <input type="text" name="town" placeholder="Unesite grad" required>
+                <br> Postanski broj <input type="number" min="10000" max="53296" name="postal" placeholder="Unesite svoj postranski broj:" required>
+                <br> Drzava <input type="text" name="country" placeholder="Unesite drzavu" list="drzava" required>
+                <br> Broj telefona <input type="tel" name="tel" placeholder="Unesite broj telefona:" required>
+                <br> Kreditna kartica <input type="text" name="card_num" placeholder="1111-2222-3333-4444" required>
+                <br> Mjesec isteka kartice: <input type="number" name="exp_month" min="1" max="12" placeholder="Mjesec isteka kartice" required>
+                <br> Godina isteka kartice: <input type="number" name="exp_year" min="2019" placeholder="Godina isteka kartice" required>
+            </fieldset>
+            <fieldset>
+                <legend>Obavijesti i podruzja zanimanja</legend>
+                Koji vas proizvodi zanimaju:<br>
+                <select name="products" multiple="multiple" size="15">
+                    <optgroup label="Odjeca">
+                        <option value="Hlace">Hlace</option>
+                        <option value="Majica">Majica</option>
+                        <option value="Jaketa">Jaketa</option>
+                    </optgroup>
+                    <optgroup label="Obuca">
+                        <option value="Tenisice">Tenisice</option>
+                        <option value="Cizme">Cizme</option>
+                        <option value="Cipele">Cipele</option>
+                        <option value="Sandale">Sandale</option>
+                    </optgroup>
+                    <optgroup label="Dodaci">
+                        <option value="Remen">Remen</option>
+                        <option value="Kape">Kape</option>
+                        <option value="Nakit">Nakit</option>
+                        <option value="Torba">Torba</option>
+                    </optgroup>
+                </select>
+                <br>
+                Unesite rang cijene:
+                <input type="radio" name="price" value="100">do 100kn
+                <input type="radio" name="price" value="500">100-500kn
+                <input type="radio" name="price" value="500plus">iznad 500kn
+                <br>
+                Odaberite proizvodaca: <br>
+                <select name="producer" multiple="multiple" size="5">
+                    <option value="Nike">Nike</option>
+                    <option value="Pull&Bear">Pull&Bear</option>
+                    <option value="Adidas">Adidas</option>
+                    <option value="Guess">Guess</option>
+                    <option value="Esprit">Esprit</option>
+                </select>
+                <br>
+                Želite li primati obavijesti o akcijama i novostima?
+                <input type="radio" name="news" value="da">Da
+                <input type="radio" name="news" value="ne">Ne
+                <br>
+                Odaberite način kontaktiranja:
+                <input type="checkbox" name="contact_phone" value="telefon">Telefon
+                <input type="checkbox" name="contact_post" value="posta" disabled>Poštom
+                <input type="checkbox" name="contact_email" value="email">Email
+            </fieldset>
+            <input type="submit" name="register" value="Registracija">
+        </fieldset>
+    </form>
+
+</body>
+</html> 
